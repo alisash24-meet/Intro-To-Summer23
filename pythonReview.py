@@ -15,6 +15,7 @@ def dislike(youtube_video):
 def add_comment(youtube_video, username, comment_text):
 	youtube_video["comments"][username] = comment_text
 	return youtube_video
+	
 
 youtube_video = create_youtube_video("new video", "cool video")
 print(youtube_video)
@@ -25,5 +26,4 @@ print(youtube_video)
 
 for i in range(495):
 	like(youtube_video)
-
 

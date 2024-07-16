@@ -55,3 +55,14 @@ for i in range(7):
 	print("*")
 	print("  ", highest_temp_day, ":", highest_temp)
 	print("  ", lowest_temp_day, ":", lowest_temp)
+
+
+sorted_list = []
+for i in range(7):
+	for j in range(i, 7):
+		if temperatures[j] < temperatures[i]:
+			temp_var = temperatures[i]
+			temperatures[i] = temperatures[j]
+			temperatures[j] = temp_var
+
+print(sorted_list)
